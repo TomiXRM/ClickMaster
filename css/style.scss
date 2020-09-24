@@ -1,0 +1,33 @@
+$baseColor:rgb(255, 255, 255);
+$boxColor:rgb(200, 200, 200);
+
+body {
+        background-color: $baseColor;
+
+        margin: 0px;
+        padding: 0px;
+        font-family: "YuGothic", "Yu Gothic", "Meiryo", "ヒラギノ角ゴ", sans-serif;
+
+        .workbox {
+                display: inline-block;
+                background-color: cyan;
+                margin: 0;
+                font-size: 0;
+                padding: 10px;
+
+                // background-color: $boxColor;
+                canvas {
+                        display: block;
+                }
+        }
+}
+
+
+// メモ
+/*
+親要素の大きさを小要素に合わせる方法 
+[https: //whity.matrix.jp/notepad/entry/16]
+
+したの隙間をなくす方法 
+fonf-size:0;にする
+*/
