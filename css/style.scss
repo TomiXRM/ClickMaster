@@ -1,5 +1,7 @@
 $baseColor:rgb(255, 255, 255);
 $boxColor:rgb(200, 200, 200);
+$textColor:rgb(94, 94, 94);
+$mainCOlor:rgb(242, 192, 66);
 
 body {
         background-color: $baseColor;
@@ -9,6 +11,36 @@ body {
         font-family: din-2014, "YuGothic", "Yu Gothic", "Meiryo", "ヒラギノ角ゴ", sans-serif;
         font-weight: 700;
         font-style: normal;
+
+
+        h1 {
+                letter-spacing: 0px;
+                text-align: center;
+                color: $textColor;
+                font-size: 3vw;
+        }
+
+
+        h2 {
+                margin: 0px 4vw;
+                color: $textColor;
+        }
+
+        p {
+                margin: 10px 4vw;
+                padding: 10px 0px;
+                line-height: 1.8;
+                font-size: 16px;
+                color: $textColor;
+
+                @media screen and (min-width:768px) {
+                        /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+                        font-size: 18px;
+                }
+
+
+        }
+
 
         header {
                 nav {
@@ -20,7 +52,8 @@ body {
                                 margin: 0px;
                                 padding: 0px;
                                 overflow: hidden;
-                                background-color: #F2C042;
+
+                                background-color: $mainCOlor;
 
                                 li {
                                         padding: 14px 20px;
@@ -42,34 +75,48 @@ body {
         }
 
         .img-logo {
-
+                text-align: center;
+                margin: 0 auto;
 
                 div {
                         display: block;
-                        width: 60%;
-                        text-align: center;
+                        width: 70%;
+                        padding: 7vw 30px;
 
                         img {
                                 text-align: center;
-                                width: 70%;
+                                width: 90%;
                         }
                 }
         }
 
-}
+        #lean {
+                padding: 20px;
 
-.workbox {
-        display: inline-block;
-        background-color: cyan;
-        margin: 0;
-        font-size: 0;
-        padding: 10px;
-
-        // background-color: $boxColor;
-        canvas {
-                display: block;
+                p {
+                        text-align: center;
+                }
         }
-}
+
+
+        .canvasOuter {
+                display: block;
+                text-align: center;
+
+                .canvasInner {
+                        display: inline-block;
+                        background-color: $mainCOlor;
+                        margin: 0;
+                        font-size: 0;
+                        padding: 10px;
+
+                        // background-color: $boxColor;
+                        canvas {
+                                display: block;
+                        }
+                }
+        }
+
 }
 
 

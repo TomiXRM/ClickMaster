@@ -8,6 +8,33 @@ body {
   font-style: normal;
 }
 
+body h1 {
+  letter-spacing: 0px;
+  text-align: center;
+  color: #5e5e5e;
+  font-size: 3vw;
+}
+
+body h2 {
+  margin: 0px 4vw;
+  color: #5e5e5e;
+}
+
+body p {
+  margin: 10px 4vw;
+  padding: 10px 0px;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #5e5e5e;
+}
+
+@media screen and (min-width: 768px) {
+  body p {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    font-size: 18px;
+  }
+}
+
 body header nav {
   margin: 0px;
   padding: 0px;
@@ -18,7 +45,7 @@ body header nav ul {
   margin: 0px;
   padding: 0px;
   overflow: hidden;
-  background-color: #F2C042;
+  background-color: #f2c042;
 }
 
 body header nav ul li {
@@ -36,15 +63,44 @@ body header nav ul li a {
   font-size: 24px;
 }
 
-body .workbox {
+body .img-logo {
+  text-align: center;
+  margin: 0 auto;
+}
+
+body .img-logo div {
+  display: block;
+  width: 70%;
+  padding: 7vw 30px;
+}
+
+body .img-logo div img {
+  text-align: center;
+  width: 90%;
+}
+
+body #lean {
+  padding: 20px;
+}
+
+body #lean p {
+  text-align: center;
+}
+
+body .canvasOuter {
+  display: block;
+  text-align: center;
+}
+
+body .canvasOuter .canvasInner {
   display: inline-block;
-  background-color: cyan;
+  background-color: #f2c042;
   margin: 0;
   font-size: 0;
   padding: 10px;
 }
 
-body .workbox canvas {
+body .canvasOuter .canvasInner canvas {
   display: block;
 }
 
