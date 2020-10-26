@@ -97,11 +97,11 @@ body .canvasOuter .canvasInner {
   background-color: #f2c042;
   margin: 0;
   font-size: 0;
-  padding: 10px;
+  padding: 7px;
 }
 
 body .canvasOuter .canvasInner canvas {
-  display: block;
+  background-color: white;
 }
 
 /*

@@ -1,9 +1,3 @@
-/**
- * Mouse Functions. 
- * 
- * Click on the box and drag it across the screen. 
- */
- 
 float bx;
 float by;
 int boxSize = 75;
@@ -22,8 +16,12 @@ void setup() {
 }
 
 void draw() { 
-  background(0);
+  background(255);
   
+  strokeWeight(5);
+  fill(135,149,163);
+  rectMode(CORNER);
+  rect(0, 0, 100, 100);  //  CORNER モードで白い四角形を描く
   // Test if the cursor is over the box 
   if (mouseX > bx-boxSize && mouseX < bx+boxSize && 
       mouseY > by-boxSize && mouseY < by+boxSize) {
@@ -45,7 +43,7 @@ void draw() {
 void mousePressed() {
   if(overBox) { 
     locked = true; 
-    fill(255, 255, 255);
+    fill(254, 174, 0);
   } else {
     locked = false;
   }

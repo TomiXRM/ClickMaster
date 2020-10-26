@@ -108,11 +108,12 @@ body {
                         background-color: $mainCOlor;
                         margin: 0;
                         font-size: 0;
-                        padding: 10px;
+                        padding: 7px;
 
                         // background-color: $boxColor;
                         canvas {
-                                display: block;
+                                // display: block;
+                                background-color: white;
                         }
                 }
         }

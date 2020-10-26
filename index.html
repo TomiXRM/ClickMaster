@@ -34,10 +34,11 @@
                         <div>
                                 <img src="/img/logo.svg" alt="logo" />
                         </div>
+
                 </center>
         </aside>
 
-        <!-- <script type=" text/processing"></script> -->
+
 
         <article id="lean">
                 <section>
@@ -45,8 +46,19 @@
                         <p>ドラッグアンドドロップできますか！？？できないんですか？？それなら練習するしかねぇぜ💪💪</p>
                         <div class="canvasOuter">
                                 <div class="canvasInner">
-                                        <canvas
-                                                data-processing-sources="pde/MouseFunctions/MouseFunctions.pde"></canvas>
+
+                                        <canvas id="app" data-processing-sources="pde/hue/hue.pde"></canvas>
+                                        <!-- <script type="text/javascript">
+                                                function init() {
+                                                        // キャンバスを取り出す
+                                                        var canvas = document.getElementById('app');
+                                                        // 2Dのコンテキストを取り出す
+                                                        var ctx = canvas.getContext('2d');
+                                                        // 指定の色で範囲内を塗りつぶす
+                                                        ctx.fillStyle = 'rgb(255,0,255)';
+                                                        ctx.fillRect(0, 0, 200, 200);
+                                                }
+                                        </script> -->
                                 </div>
                         </div>
                 </section>
