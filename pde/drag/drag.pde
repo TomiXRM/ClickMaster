@@ -10,17 +10,21 @@ void setup(){
   size(640,360);
   frameRate(60);
   
-  fileIcon = loadImage("./img/file.png");
+  fileIcon = loadImage("file.png");
 }
 
 
 void draw(){
-  background();
+  background2();
   image(fileIcon,mouseX-iconWidth/2,mouseY-iconHeight/2,iconWidth,iconHeight);
+  stroke(153);
+  fill(153);
+  //icon()
+  rect(mouseX-iconWidth/2,mouseY-iconHeight/2,iconWidth,iconHeight);
 }
 
 //draw background
-void background(){
+void background2(){
   background(255);
   rectMode(CORNER);
   strokeWeight(0);
@@ -29,6 +33,7 @@ void background(){
   fill(255);
   rect(5, 5, 630, 350);  //  CORNER モードで白い四角形を描く
 }
+
 
 //callbuck mouse pressed
 void mousePressed(){
